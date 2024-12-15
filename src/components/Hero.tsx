@@ -5,7 +5,7 @@ import { TiLocationArrow } from "react-icons/ti";
 import { useEffect, useRef, useState } from "react";
 
 import Button from "./Button";
-// import VideoPreview from "./VideoPreview";
+import VideoPreview from "./VideoPreview";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -101,11 +101,11 @@ const Hero = () => {
 
       <div
         id="video-frame"
-        className="bg-blue-75 relative z-10 h-dvh w-screen overflow-hidden rounded-lg"
+        className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75"
       >
         <div>
           <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
-            <div>
+            <VideoPreview>
               <div
                 onClick={handleMiniVdClick}
                 className="origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100"
@@ -120,7 +120,7 @@ const Hero = () => {
                   onLoadedData={handleVideoLoad}
                 />
               </div>
-            </div>
+            </VideoPreview>
           </div>
 
           <video
@@ -144,7 +144,7 @@ const Hero = () => {
           />
         </div>
 
-        <h1 className="special-font hero-heading text-blue-75 absolute bottom-5 right-5 z-40">
+        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
           G<b>A</b>MING
         </h1>
 
@@ -154,7 +154,7 @@ const Hero = () => {
               redefi<b>n</b>e
             </h1>
 
-            <p className="font-robert-regular mb-5 max-w-64 text-blue-100">
+            <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
               Enter the Metagame Layer <br /> Unleash the Play Economy
             </p>
 

@@ -42,7 +42,7 @@ const About = () => {
           <p>The Game of Games begins—your life, now an epic MMORPG</p>
           <p className="text-gray-500">
             Zentry unites every player from countless games and platforms, both
-            digital and physical, into a unified Play Economy
+            digital and physical, into a unified Play Economy.
           </p>
         </div>
       </div>
